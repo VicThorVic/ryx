@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYX MOTO GARAGE - Premium Motorcycle Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1 class="logo-text">RYX<br><span class="logo-moto">MOTO</span><br><span class="logo-garage">GARAGE</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">RYX</span>
+                    <span class="title-line">MOTO</span>
+                    <span class="title-line subtitle">GARAGE</span>
+                </h1>
+                <p class="hero-subtitle">Premium Motorcycle Service & Customization</p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary">BOOK SERVICE</button>
+                    <button class="cta-button secondary">VIEW GALLERY</button>
+                </div>
+            </div>
+            <div class="hero-rider">
+                <div class="rider-silhouette"></div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">OUR SERVICES</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>MAINTENANCE</h3>
+                        <p>Complete motorcycle maintenance and tune-ups</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>PERFORMANCE</h3>
+                        <p>Engine optimization and performance upgrades</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>CUSTOM BUILD</h3>
+                        <p>Bespoke motorcycle design and customization</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛠️</div>
+                        <h3>REPAIR</h3>
+                        <p>Expert repair services for all motorcycle brands</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">ABOUT RYX MOTO</h2>
+                    <p>At RYX MOTO GARAGE, we're passionate about motorcycles and dedicated to providing exceptional service. Our team of expert technicians combines cutting-edge technology with traditional craftsmanship to deliver outstanding results.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Bikes Serviced</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Emergency Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>LOCATION</h3>
+                            <p>123 Garage Street<br>Motor City, MC 12345</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>HOURS</h3>
+                            <p>Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>CONTACT</h3>
+                            <p>Phone: (555) 123-MOTO<br>Email: info@ryxmoto.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="tel" placeholder="Your Phone">
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                            <button type="submit" class="cta-button primary">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 RYX MOTO GARAGE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>BOOK A SERVICE</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <input type="text" id="customerName" placeholder="Full Name" required>
+                    <input type="email" id="customerEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                    <select id="serviceType" required>
+                        <option value="">Select Service</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="performance">Performance Upgrade</option>
+                        <option value="custom">Custom Build</option>
+                        <option value="repair">Repair Service</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <input type="text" id="motorcycleMake" placeholder="Motorcycle Make" required>
+                    <input type="text" id="motorcycleModel" placeholder="Motorcycle Model" required>
+                </div>
+                <div class="form-row">
+                    <input type="number" id="motorcycleYear" placeholder="Year" min="1950" max="2025" required>
+                    <input type="date" id="preferredDate" required>
+                </div>
+                <div class="form-row">
+                    <select id="preferredTime" required>
+                        <option value="">Preferred Time</option>
+                        <option value="morning">Morning (8AM - 12PM)</option>
+                        <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                        <option value="evening">Evening (5PM - 8PM)</option>
+                    </select>
+                </div>
+                <textarea id="serviceNotes" placeholder="Additional notes or specific requirements" rows="4"></textarea>
+                <button type="submit" class="cta-button primary">CONFIRM BOOKING</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

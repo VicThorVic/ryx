@@ -152,6 +152,44 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid var(--neon-blue);
+    color: var(--text-secondary);
+    padding: 0.4rem 0.8rem;
+    font-family: 'Orbitron', monospace;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lang-btn:hover {
+    border-color: var(--neon-red);
+    color: var(--text-primary);
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.5);
+    transform: translateY(-2px);
+}
+
+.lang-btn.active {
+    background: var(--gradient-primary);
+    border-color: var(--neon-red);
+    color: var(--text-primary);
+    box-shadow: 0 0 20px rgba(255, 0, 64, 0.6);
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -482,6 +520,18 @@ body {
 @media (max-width: 768px) {
     .nav {
         padding: 1rem 1.5rem;
+    }
+
+    .language-switcher {
+        position: static;
+        order: -1;
+        margin-right: auto;
+        margin-left: 1rem;
+    }
+
+    .lang-btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
     }
 
     .hamburger {

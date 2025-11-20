@@ -1,4 +1,262 @@
+// Translations object
+const translations = {
+    ro: {
+        nav: {
+            home: 'ACASĂ',
+            services: 'SERVICII',
+            about: 'DESPRE',
+            contact: 'CONTACT'
+        },
+        hero: {
+            subtitle: 'Service & Personalizare Premium pentru Motociclete',
+            bookService: 'REZERVĂ SERVICE',
+            viewGallery: 'VEZI GALERIA'
+        },
+        services: {
+            title: 'SERVICIILE NOASTRE',
+            maintenance: {
+                title: 'ÎNTREȚINERE',
+                desc: 'Întreținere completă și reglaje pentru motociclete'
+            },
+            performance: {
+                title: 'PERFORMANȚĂ',
+                desc: 'Optimizarea motorului și îmbunătățiri de performanță'
+            },
+            custom: {
+                title: 'CUSTOM BUILD',
+                desc: 'Design personalizat și customizare de motociclete'
+            },
+            repair: {
+                title: 'REPARAȚII',
+                desc: 'Servicii expert de reparații pentru toate mărcile'
+            }
+        },
+        about: {
+            title: 'DESPRE RYX MOTO',
+            description: 'La RYX MOTO GARAGE, suntem pasionați de motociclete și dedicați să oferim servicii excepționale. Echipa noastră de tehnicieni experți combină tehnologia de ultimă generație cu meșteșugul tradițional pentru a oferi rezultate remarcabile.',
+            stats: {
+                bikes: 'Motociclete Service',
+                experience: 'Ani Experiență',
+                emergency: 'Serviciu Urgență'
+            }
+        },
+        contact: {
+            title: 'CONTACTEAZĂ-NE',
+            location: {
+                title: 'LOCAȚIE'
+            },
+            hours: {
+                title: 'PROGRAM',
+                schedule: 'Lun-Vin: 8:00-20:00<br>Sâm-Dum: 9:00-18:00'
+            },
+            phone: {
+                title: 'TELEFON'
+            },
+            email: {
+                title: 'EMAIL'
+            }
+        },
+        modal: {
+            booking: {
+                title: 'REZERVĂ UN SERVICE',
+                subtitle: 'Contactează-ne pentru a programa service-ul motocicletei tale',
+                call: 'SUNĂ-NE',
+                email: 'SCRIE-NE',
+                locationLabel: '📍 LOCAȚIE',
+                hoursLabel: '🕒 PROGRAM DE LUCRU',
+                hoursText: 'Luni - Vineri: 8:00 - 20:00<br>Sâmbătă - Duminică: 9:00 - 18:00'
+            },
+            gallery: {
+                title: 'GALERIA NOASTRĂ'
+            }
+        }
+    },
+    en: {
+        nav: {
+            home: 'HOME',
+            services: 'SERVICES',
+            about: 'ABOUT',
+            contact: 'CONTACT'
+        },
+        hero: {
+            subtitle: 'Premium Motorcycle Service & Customization',
+            bookService: 'BOOK SERVICE',
+            viewGallery: 'VIEW GALLERY'
+        },
+        services: {
+            title: 'OUR SERVICES',
+            maintenance: {
+                title: 'MAINTENANCE',
+                desc: 'Complete motorcycle maintenance and tune-ups'
+            },
+            performance: {
+                title: 'PERFORMANCE',
+                desc: 'Engine optimization and performance upgrades'
+            },
+            custom: {
+                title: 'CUSTOM BUILD',
+                desc: 'Bespoke motorcycle design and customization'
+            },
+            repair: {
+                title: 'REPAIR',
+                desc: 'Expert repair services for all motorcycle brands'
+            }
+        },
+        about: {
+            title: 'ABOUT RYX MOTO',
+            description: 'At RYX MOTO GARAGE, we\'re passionate about motorcycles and dedicated to providing exceptional service. Our team of expert technicians combines cutting-edge technology with traditional craftsmanship to deliver outstanding results.',
+            stats: {
+                bikes: 'Bikes Serviced',
+                experience: 'Years Experience',
+                emergency: 'Emergency Service'
+            }
+        },
+        contact: {
+            title: 'GET IN TOUCH',
+            location: {
+                title: 'LOCATION'
+            },
+            hours: {
+                title: 'HOURS',
+                schedule: 'Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM'
+            },
+            phone: {
+                title: 'PHONE'
+            },
+            email: {
+                title: 'EMAIL'
+            }
+        },
+        modal: {
+            booking: {
+                title: 'BOOK A SERVICE',
+                subtitle: 'Contact us to schedule your motorcycle service',
+                call: 'CALL US',
+                email: 'EMAIL US',
+                locationLabel: '📍 LOCATION',
+                hoursLabel: '🕒 WORKING HOURS',
+                hoursText: 'Monday - Friday: 8AM - 8PM<br>Saturday - Sunday: 9AM - 6PM'
+            },
+            gallery: {
+                title: 'OUR GALLERY'
+            }
+        }
+    },
+    ru: {
+        nav: {
+            home: 'ГЛАВНАЯ',
+            services: 'УСЛУГИ',
+            about: 'О НАС',
+            contact: 'КОНТАКТЫ'
+        },
+        hero: {
+            subtitle: 'Премиум Сервис и Кастомизация Мотоциклов',
+            bookService: 'ЗАПИСАТЬСЯ',
+            viewGallery: 'ГАЛЕРЕЯ'
+        },
+        services: {
+            title: 'НАШИ УСЛУГИ',
+            maintenance: {
+                title: 'ОБСЛУЖИВАНИЕ',
+                desc: 'Полное техническое обслуживание и настройка мотоциклов'
+            },
+            performance: {
+                title: 'ПРОИЗВОДИТЕЛЬНОСТЬ',
+                desc: 'Оптимизация двигателя и улучшение производительности'
+            },
+            custom: {
+                title: 'КАСТОМ БИЛД',
+                desc: 'Индивидуальный дизайн и кастомизация мотоциклов'
+            },
+            repair: {
+                title: 'РЕМОНТ',
+                desc: 'Профессиональный ремонт мотоциклов всех марок'
+            }
+        },
+        about: {
+            title: 'О RYX MOTO',
+            description: 'В RYX MOTO GARAGE мы увлечены мотоциклами и стремимся предоставлять исключительный сервис. Наша команда опытных техников сочетает передовые технологии с традиционным мастерством для достижения выдающихся результатов.',
+            stats: {
+                bikes: 'Обслужено Мотоциклов',
+                experience: 'Лет Опыта',
+                emergency: 'Экстренный Сервис'
+            }
+        },
+        contact: {
+            title: 'СВЯЖИТЕСЬ С НАМИ',
+            location: {
+                title: 'АДРЕС'
+            },
+            hours: {
+                title: 'ЧАСЫ РАБОТЫ',
+                schedule: 'Пн-Пт: 8:00-20:00<br>Сб-Вс: 9:00-18:00'
+            },
+            phone: {
+                title: 'ТЕЛЕФОН'
+            },
+            email: {
+                title: 'EMAIL'
+            }
+        },
+        modal: {
+            booking: {
+                title: 'ЗАПИСАТЬСЯ НА СЕРВИС',
+                subtitle: 'Свяжитесь с нами, чтобы записаться на обслуживание мотоцикла',
+                call: 'ПОЗВОНИТЕ НАМ',
+                email: 'НАПИШИТЕ НАМ',
+                locationLabel: '📍 АДРЕС',
+                hoursLabel: '🕒 ЧАСЫ РАБОТЫ',
+                hoursText: 'Понедельник - Пятница: 8:00 - 20:00<br>Суббота - Воскресенье: 9:00 - 18:00'
+            },
+            gallery: {
+                title: 'НАША ГАЛЕРЕЯ'
+            }
+        }
+    }
+};
+
+// Language switching functionality
+let currentLanguage = localStorage.getItem('language') || 'ro';
+
+function setLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const keys = element.getAttribute('data-i18n').split('.');
+        let translation = translations[lang];
+
+        for (const key of keys) {
+            translation = translation[key];
+        }
+
+        if (translation) {
+            element.innerHTML = translation;
+        }
+    });
+
+    // Update active state on language buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize language
+    setLanguage(currentLanguage);
+
+    // Language switcher buttons
+    document.querySelectorAll('.lang-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+        });
+    });
+
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');

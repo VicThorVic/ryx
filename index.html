@@ -15,16 +15,21 @@
             <div class="logo">
                 <h1 class="logo-text">RYX<br><span class="logo-moto">MOTO</span><br><span class="logo-garage">GARAGE</span></h1>
             </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="ro">RO</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+            </div>
             <button class="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">HOME</a></li>
-                <li><a href="#services" class="nav-link">SERVICES</a></li>
-                <li><a href="#about" class="nav-link">ABOUT</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">ACASĂ</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">SERVICII</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">DESPRE</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -37,10 +42,10 @@
                     <span class="title-line">MOTO</span>
                     <span class="title-line subtitle">GARAGE</span>
                 </h1>
-                <p class="hero-subtitle">Premium Motorcycle Service & Customization</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Service & Personalizare Premium pentru Motociclete</p>
                 <div class="hero-buttons">
-                    <button class="cta-button primary">BOOK SERVICE</button>
-                    <button class="cta-button secondary">VIEW GALLERY</button>
+                    <button class="cta-button primary" data-i18n="hero.bookService">REZERVĂ SERVICE</button>
+                    <button class="cta-button secondary" data-i18n="hero.viewGallery">VEZI GALERIA</button>
                 </div>
             </div>
             <div class="hero-rider">
@@ -50,27 +55,27 @@
 
         <section id="services" class="services">
             <div class="container">
-                <h2 class="section-title">OUR SERVICES</h2>
+                <h2 class="section-title" data-i18n="services.title">SERVICIILE NOASTRE</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">🔧</div>
-                        <h3>MAINTENANCE</h3>
-                        <p>Complete motorcycle maintenance and tune-ups</p>
+                        <h3 data-i18n="services.maintenance.title">ÎNTREȚINERE</h3>
+                        <p data-i18n="services.maintenance.desc">Întreținere completă și reglaje pentru motociclete</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">⚡</div>
-                        <h3>PERFORMANCE</h3>
-                        <p>Engine optimization and performance upgrades</p>
+                        <h3 data-i18n="services.performance.title">PERFORMANȚĂ</h3>
+                        <p data-i18n="services.performance.desc">Optimizarea motorului și îmbunătățiri de performanță</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🎨</div>
-                        <h3>CUSTOM BUILD</h3>
-                        <p>Bespoke motorcycle design and customization</p>
+                        <h3 data-i18n="services.custom.title">CUSTOM BUILD</h3>
+                        <p data-i18n="services.custom.desc">Design personalizat și customizare de motociclete</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🛠️</div>
-                        <h3>REPAIR</h3>
-                        <p>Expert repair services for all motorcycle brands</p>
+                        <h3 data-i18n="services.repair.title">REPARAȚII</h3>
+                        <p data-i18n="services.repair.desc">Servicii expert de reparații pentru toate mărcile</p>
                     </div>
                 </div>
             </div>
@@ -79,20 +84,20 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="about-content">
-                    <h2 class="section-title">ABOUT RYX MOTO</h2>
-                    <p>At RYX MOTO GARAGE, we're passionate about motorcycles and dedicated to providing exceptional service. Our team of expert technicians combines cutting-edge technology with traditional craftsmanship to deliver outstanding results.</p>
+                    <h2 class="section-title" data-i18n="about.title">DESPRE RYX MOTO</h2>
+                    <p data-i18n="about.description">La RYX MOTO GARAGE, suntem pasionați de motociclete și dedicați să oferim servicii excepționale. Echipa noastră de tehnicieni experți combină tehnologia de ultimă generație cu meșteșugul tradițional pentru a oferi rezultate remarcabile.</p>
                     <div class="stats">
                         <div class="stat">
                             <span class="stat-number">500+</span>
-                            <span class="stat-label">Bikes Serviced</span>
+                            <span class="stat-label" data-i18n="about.stats.bikes">Motociclete Deservite</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">15+</span>
-                            <span class="stat-label">Years Experience</span>
+                            <span class="stat-label" data-i18n="about.stats.experience">Ani Experiență</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">24/7</span>
-                            <span class="stat-label">Emergency Service</span>
+                            <span class="stat-label" data-i18n="about.stats.emergency">Serviciu Urgență</span>
                         </div>
                     </div>
                 </div>
@@ -101,27 +106,27 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2 class="section-title">GET IN TOUCH</h2>
+                <h2 class="section-title" data-i18n="contact.title">CONTACTEAZĂ-NE</h2>
                 <div class="contact-content-centered">
                     <div class="contact-info-grid">
                         <div class="contact-item">
                             <div class="contact-icon">📍</div>
-                            <h3>LOCATION</h3>
+                            <h3 data-i18n="contact.location.title">LOCAȚIE</h3>
                             <p>Șos. Muncești 799</p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">🕒</div>
-                            <h3>HOURS</h3>
-                            <p>Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM</p>
+                            <h3 data-i18n="contact.hours.title">PROGRAM</h3>
+                            <p data-i18n="contact.hours.schedule">Lun-Vin: 8:00-20:00<br>Sâm-Dum: 9:00-18:00</p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">📞</div>
-                            <h3>PHONE</h3>
+                            <h3 data-i18n="contact.phone.title">TELEFON</h3>
                             <p><a href="tel:068212810">068 212 810</a></p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">✉️</div>
-                            <h3>EMAIL</h3>
+                            <h3 data-i18n="contact.email.title">EMAIL</h3>
                             <p><a href="mailto:vasyl.engineering.group@gmail.com">vasyl.engineering.group@gmail.com</a></p>
                         </div>
                     </div>
@@ -140,29 +145,29 @@
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>BOOK A SERVICE</h2>
+            <h2 data-i18n="modal.booking.title">REZERVĂ UN SERVICE</h2>
             <div class="booking-info">
-                <p class="booking-subtitle">Contact us to schedule your motorcycle service</p>
+                <p class="booking-subtitle" data-i18n="modal.booking.subtitle">Contactează-ne pentru a programa service-ul motocicletei tale</p>
                 <div class="booking-contact-grid">
                     <div class="booking-contact-item">
                         <div class="booking-icon">📞</div>
-                        <h3>CALL US</h3>
+                        <h3 data-i18n="modal.booking.call">SUNĂ-NE</h3>
                         <a href="tel:068212810" class="contact-link">068 212 810</a>
                     </div>
                     <div class="booking-contact-item">
                         <div class="booking-icon">✉️</div>
-                        <h3>EMAIL US</h3>
+                        <h3 data-i18n="modal.booking.email">SCRIE-NE</h3>
                         <a href="mailto:vasyl.engineering.group@gmail.com" class="contact-link">vasyl.engineering.group@gmail.com</a>
                     </div>
                 </div>
                 <div class="booking-details">
                     <div class="booking-detail-item">
-                        <h4>📍 LOCATION</h4>
+                        <h4 data-i18n="modal.booking.locationLabel">📍 LOCAȚIE</h4>
                         <p>Șos. Muncești 799</p>
                     </div>
                     <div class="booking-detail-item">
-                        <h4>🕒 WORKING HOURS</h4>
-                        <p>Monday - Friday: 8AM - 8PM<br>Saturday - Sunday: 9AM - 6PM</p>
+                        <h4 data-i18n="modal.booking.hoursLabel">🕒 PROGRAM DE LUCRU</h4>
+                        <p data-i18n="modal.booking.hoursText">Luni - Vineri: 8:00 - 20:00<br>Sâmbătă - Duminică: 9:00 - 18:00</p>
                     </div>
                 </div>
             </div>
@@ -173,7 +178,7 @@
     <div id="galleryModal" class="modal">
         <div class="modal-content gallery-modal-content">
             <span class="close gallery-close">&times;</span>
-            <h2>OUR GALLERY</h2>
+            <h2 data-i18n="modal.gallery.title">GALERIA NOASTRĂ</h2>
             <div class="gallery-grid" id="galleryGrid">
                 <!-- Gallery images will be loaded here -->
             </div>

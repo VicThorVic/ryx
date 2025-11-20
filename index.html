@@ -102,29 +102,28 @@
         <section id="contact" class="contact">
             <div class="container">
                 <h2 class="section-title">GET IN TOUCH</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
+                <div class="contact-content-centered">
+                    <div class="contact-info-grid">
                         <div class="contact-item">
+                            <div class="contact-icon">📍</div>
                             <h3>LOCATION</h3>
                             <p>Șos. Muncești 799</p>
                         </div>
                         <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
                             <h3>HOURS</h3>
                             <p>Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM</p>
                         </div>
                         <div class="contact-item">
-                            <h3>CONTACT</h3>
-                            <p>Phone: 068212810<br>Email: vasyl.engineering.group@gmail.com</p>
+                            <div class="contact-icon">📞</div>
+                            <h3>PHONE</h3>
+                            <p><a href="tel:068212810">068 212 810</a></p>
                         </div>
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
-                            <input type="tel" placeholder="Your Phone">
-                            <textarea placeholder="Message" rows="5" required></textarea>
-                            <button type="submit" class="cta-button primary">SEND MESSAGE</button>
-                        </form>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <h3>EMAIL</h3>
+                            <p><a href="mailto:vasyl.engineering.group@gmail.com">vasyl.engineering.group@gmail.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,40 +141,31 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>BOOK A SERVICE</h2>
-            <form id="bookingForm" class="booking-form">
-                <div class="form-row">
-                    <input type="text" id="customerName" placeholder="Full Name" required>
-                    <input type="email" id="customerEmail" placeholder="Email Address" required>
+            <div class="booking-info">
+                <p class="booking-subtitle">Contact us to schedule your motorcycle service</p>
+                <div class="booking-contact-grid">
+                    <div class="booking-contact-item">
+                        <div class="booking-icon">📞</div>
+                        <h3>CALL US</h3>
+                        <a href="tel:068212810" class="contact-link">068 212 810</a>
+                    </div>
+                    <div class="booking-contact-item">
+                        <div class="booking-icon">✉️</div>
+                        <h3>EMAIL US</h3>
+                        <a href="mailto:vasyl.engineering.group@gmail.com" class="contact-link">vasyl.engineering.group@gmail.com</a>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <input type="tel" id="customerPhone" placeholder="Phone Number" required>
-                    <select id="serviceType" required>
-                        <option value="">Select Service</option>
-                        <option value="maintenance">Maintenance</option>
-                        <option value="performance">Performance Upgrade</option>
-                        <option value="custom">Custom Build</option>
-                        <option value="repair">Repair Service</option>
-                    </select>
+                <div class="booking-details">
+                    <div class="booking-detail-item">
+                        <h4>📍 LOCATION</h4>
+                        <p>Șos. Muncești 799</p>
+                    </div>
+                    <div class="booking-detail-item">
+                        <h4>🕒 WORKING HOURS</h4>
+                        <p>Monday - Friday: 8AM - 8PM<br>Saturday - Sunday: 9AM - 6PM</p>
+                    </div>
                 </div>
-                <div class="form-row">
-                    <input type="text" id="motorcycleMake" placeholder="Motorcycle Make" required>
-                    <input type="text" id="motorcycleModel" placeholder="Motorcycle Model" required>
-                </div>
-                <div class="form-row">
-                    <input type="number" id="motorcycleYear" placeholder="Year" min="1950" max="2025" required>
-                    <input type="date" id="preferredDate" required>
-                </div>
-                <div class="form-row">
-                    <select id="preferredTime" required>
-                        <option value="">Preferred Time</option>
-                        <option value="morning">Morning (8AM - 12PM)</option>
-                        <option value="afternoon">Afternoon (12PM - 5PM)</option>
-                        <option value="evening">Evening (5PM - 8PM)</option>
-                    </select>
-                </div>
-                <textarea id="serviceNotes" placeholder="Additional notes or specific requirements" rows="4"></textarea>
-                <button type="submit" class="cta-button primary">CONFIRM BOOKING</button>
-            </form>
+            </div>
         </div>
     </div>
 

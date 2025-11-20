@@ -125,34 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Form submission
-    const contactForm = document.querySelector('.contact-form form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simulate form submission
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = 'SENDING...';
-            submitButton.disabled = true;
-            submitButton.style.opacity = '0.7';
-            
-            setTimeout(() => {
-                submitButton.textContent = 'MESSAGE SENT!';
-                submitButton.style.background = 'var(--gradient-secondary)';
-                
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                    submitButton.style.opacity = '1';
-                    submitButton.style.background = 'var(--gradient-primary)';
-                    this.reset();
-                }, 2000);
-            }, 1500);
-        });
-    }
 
     // Add dynamic typing effect to hero subtitle
     const heroSubtitle = document.querySelector('.hero-subtitle');
@@ -203,7 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const bookingModal = document.getElementById('bookingModal');
     const bookServiceButton = document.querySelector('.cta-button.primary');
     const closeModal = document.querySelector('.close');
-    const bookingForm = document.getElementById('bookingForm');
 
     // Open booking modal when BOOK SERVICE button is clicked
     if (bookServiceButton) {
@@ -228,60 +199,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = 'auto';
         }
     });
-
-    // Handle booking form submission
-    if (bookingForm) {
-        bookingForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                name: document.getElementById('customerName').value,
-                email: document.getElementById('customerEmail').value,
-                phone: document.getElementById('customerPhone').value,
-                serviceType: document.getElementById('serviceType').value,
-                motorcycleMake: document.getElementById('motorcycleMake').value,
-                motorcycleModel: document.getElementById('motorcycleModel').value,
-                motorcycleYear: document.getElementById('motorcycleYear').value,
-                preferredDate: document.getElementById('preferredDate').value,
-                preferredTime: document.getElementById('preferredTime').value,
-                notes: document.getElementById('serviceNotes').value
-            };
-
-            // Simulate booking submission
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            
-            submitButton.textContent = 'PROCESSING...';
-            submitButton.disabled = true;
-            submitButton.style.opacity = '0.7';
-            
-            setTimeout(() => {
-                submitButton.textContent = 'BOOKING CONFIRMED!';
-                submitButton.style.background = 'var(--gradient-secondary)';
-                
-                // Show success message
-                alert(`Thank you, ${formData.name}! Your booking has been confirmed.\n\nService: ${formData.serviceType}\nVehicle: ${formData.motorcycleYear} ${formData.motorcycleMake} ${formData.motorcycleModel}\nDate: ${formData.preferredDate}\nTime: ${formData.preferredTime}\n\nWe'll contact you at ${formData.email} or ${formData.phone} to confirm details.`);
-                
-                setTimeout(() => {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                    submitButton.style.opacity = '1';
-                    submitButton.style.background = 'var(--gradient-primary)';
-                    this.reset();
-                    bookingModal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }, 2000);
-            }, 1500);
-        });
-    }
-
-    // Set minimum date to today
-    const dateInput = document.getElementById('preferredDate');
-    if (dateInput) {
-        const today = new Date().toISOString().split('T')[0];
-        dateInput.min = today;
-    }
 
     // Mobile touch optimization - prevent double-tap zoom on buttons
     let lastTouchEnd = 0;

@@ -171,10 +171,126 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(createParticle, 200);
     }
 
+    // Gallery images array (sorted by name)
+    const galleryImages = [
+        'galery/IMG_0502.PNG',
+        'galery/IMG_0513.PNG',
+        'galery/IMG_0537.PNG',
+        'galery/IMG_0623.JPG',
+        'galery/IMG_0693.JPG',
+        'galery/IMG_0697.JPG',
+        'galery/IMG_0698.JPG',
+        'galery/IMG_0701.JPG'
+    ];
+
+    let currentImageIndex = 0;
+
     // Booking Modal functionality
     const bookingModal = document.getElementById('bookingModal');
     const bookServiceButton = document.querySelector('.cta-button.primary');
     const closeModal = document.querySelector('.close');
+
+    // Gallery Modal functionality
+    const galleryModal = document.getElementById('galleryModal');
+    const viewGalleryButton = document.querySelector('.cta-button.secondary');
+    const galleryClose = document.querySelector('.gallery-close');
+    const galleryGrid = document.getElementById('galleryGrid');
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.querySelector('.lightbox-prev');
+    const lightboxNext = document.querySelector('.lightbox-next');
+    const lightboxCounter = document.getElementById('lightboxCounter');
+
+    // Load gallery images
+    function loadGallery() {
+        galleryGrid.innerHTML = '';
+        galleryImages.forEach((imagePath, index) => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'gallery-item';
+            galleryItem.innerHTML = `<img src="${imagePath}" alt="Gallery image ${index + 1}" loading="lazy">`;
+            galleryItem.addEventListener('click', () => openLightbox(index));
+            galleryGrid.appendChild(galleryItem);
+        });
+    }
+
+    // Open gallery modal
+    if (viewGalleryButton) {
+        viewGalleryButton.addEventListener('click', function() {
+            loadGallery();
+            galleryModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    // Close gallery modal
+    if (galleryClose) {
+        galleryClose.addEventListener('click', function() {
+            galleryModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    // Open lightbox
+    function openLightbox(index) {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Update lightbox image
+    function updateLightboxImage() {
+        lightboxImage.src = galleryImages[currentImageIndex];
+        lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+    }
+
+    // Close lightbox
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+    }
+
+    // Previous image
+    if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', function() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightboxImage();
+        });
+    }
+
+    // Next image
+    if (lightboxNext) {
+        lightboxNext.addEventListener('click', function() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            updateLightboxImage();
+        });
+    }
+
+    // Keyboard navigation for lightbox
+    document.addEventListener('keydown', function(event) {
+        if (lightbox.style.display === 'block') {
+            if (event.key === 'ArrowLeft') {
+                lightboxPrev.click();
+            } else if (event.key === 'ArrowRight') {
+                lightboxNext.click();
+            } else if (event.key === 'Escape') {
+                lightboxClose.click();
+            }
+        }
+    });
+
+    // Close lightbox when clicking outside image
+    lightbox.addEventListener('click', function(event) {
+        if (event.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
 
     // Open booking modal when BOOK SERVICE button is clicked
     if (bookServiceButton) {
@@ -184,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Close modal when X is clicked
+    // Close booking modal when X is clicked
     if (closeModal) {
         closeModal.addEventListener('click', function() {
             bookingModal.style.display = 'none';
@@ -192,10 +308,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Close modal when clicking outside of modal content
+    // Close modals when clicking outside of modal content
     window.addEventListener('click', function(event) {
         if (event.target === bookingModal) {
             bookingModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        if (event.target === galleryModal) {
+            galleryModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });

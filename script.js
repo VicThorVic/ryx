@@ -431,14 +431,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gallery images array (sorted by name)
     const galleryImages = [
-        'galery/IMG_0502.PNG',
-        'galery/IMG_0513.PNG',
-        'galery/IMG_0537.PNG',
-        'galery/IMG_0623.JPG',
-        'galery/IMG_0693.JPG',
-        'galery/IMG_0697.JPG',
-        'galery/IMG_0698.JPG',
-        'galery/IMG_0701.JPG'
+        'galery/1.PNG',
+        'galery/2.JPG',
+        'galery/3.JPG',
+        'galery/4.JPG',
+        'galery/5.JPG',
+        'galery/6.JPG',
+        'galery/7.PNG',
+        'galery/8.PNG'
     ];
 
     let currentImageIndex = 0;

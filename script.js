@@ -23,7 +23,7 @@ const translations = {
                 desc: 'Optimizarea motorului și îmbunătățiri de performanță'
             },
             custom: {
-                title: 'CUSTOM BUILD',
+                title: 'PERSONALIZARE',
                 desc: 'Design personalizat și customizare de motociclete'
             },
             repair: {

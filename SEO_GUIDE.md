@@ -45,7 +45,7 @@ Pași:
 3. Categorie: "Motorcycle repair shop"
 4. Adresă: Șos. Muncești 799, Chișinău
 5. Telefon: 068 212 810
-6. Website: https://ryxmoto.md
+6. Website: https://ryx-moto.md
 7. Program: Lun-Vin 8-20, Sâm-Dum 9-18
 
 Adaugă:
@@ -62,7 +62,7 @@ IMPORTANT: Cere review-uri de la clienți!
 🔗 https://search.google.com/search-console
 
 1. Verifică ownership al site-ului
-2. Submit sitemap: https://ryxmoto.md/sitemap.xml
+2. Submit sitemap: https://ryx-moto.md/sitemap.xml
 3. Request indexing pentru homepage
 4. Monitorizează erori și warnings
 ```
@@ -135,8 +135,8 @@ IMPORTANT: Cere review-uri de la clienți!
 
 ### **2. Social Media (Obligatoriu!):**
 ```
-Facebook: facebook.com/ryxmoto
-Instagram: instagram.com/ryxmoto
+Facebook: facebook.com/ryx_moto
+Instagram: instagram.com/ryx_moto
 YouTube: Videoclipuri cu reparații, custom builds
 TikTok: Scurte clip-uri cu muncă în atelier
 VK: Foarte popular în Moldova pentru public rus

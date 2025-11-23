@@ -35,7 +35,7 @@ const translations = {
             title: 'DESPRE RYX MOTO',
             description: 'La RYX MOTO GARAGE, suntem pasionați de motociclete și dedicați să oferim servicii excepționale. Echipa noastră de tehnicieni experți combină tehnologia de ultimă generație cu meșteșugul tradițional pentru a oferi rezultate remarcabile.',
             stats: {
-                bikes: 'Motociclete Service',
+                bikes: 'Motociclete Deservite',
                 experience: 'Ani Experiență',
                 emergency: 'Serviciu Urgență'
             }

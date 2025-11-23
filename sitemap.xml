@@ -5,19 +5,19 @@
 
     <!-- Homepage -->
     <url>
-        <loc>https://ryxmoto.md/</loc>
+        <loc>https://ryx-moto.md/</loc>
         <lastmod>2024-01-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="ro" href="https://ryxmoto.md/"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://ryxmoto.md/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ryxmoto.md/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ryxmoto.md/"/>
+        <xhtml:link rel="alternate" hreflang="ro" href="https://ryx-moto.md/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://ryx-moto.md/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ryx-moto.md/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://ryx-moto.md/"/>
     </url>
 
     <!-- Services Section -->
     <url>
-        <loc>https://ryxmoto.md/#services</loc>
+        <loc>https://ryx-moto.md/#services</loc>
         <lastmod>2024-01-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -25,7 +25,7 @@
 
     <!-- About Section -->
     <url>
-        <loc>https://ryxmoto.md/#about</loc>
+        <loc>https://ryx-moto.md/#about</loc>
         <lastmod>2024-01-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -33,7 +33,7 @@
 
     <!-- Contact Section -->
     <url>
-        <loc>https://ryxmoto.md/#contact</loc>
+        <loc>https://ryx-moto.md/#contact</loc>
         <lastmod>2024-01-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -41,89 +41,89 @@
 
     <!-- Gallery Images -->
     <url>
-        <loc>https://ryxmoto.md/galery/1.PNG</loc>
+        <loc>https://ryx-moto.md/galery/1.PNG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/1.PNG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/1.PNG</image:loc>
             <image:caption>RYX MOTO GARAGE - Service Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/2.JPG</loc>
+        <loc>https://ryx-moto.md/galery/2.JPG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/2.JPG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/2.JPG</image:loc>
             <image:caption>RYX MOTO GARAGE - Service Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/3.JPG</loc>
+        <loc>https://ryx-moto.md/galery/3.JPG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/3.JPG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/3.JPG</image:loc>
             <image:caption>RYX MOTO GARAGE - Service Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/4.JPG</loc>
+        <loc>https://ryx-moto.md/galery/4.JPG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/4.JPG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/4.JPG</image:loc>
             <image:caption>RYX MOTO GARAGE - Custom Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/5.JPG</loc>
+        <loc>https://ryx-moto.md/galery/5.JPG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/5.JPG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/5.JPG</image:loc>
             <image:caption>RYX MOTO GARAGE - Reparații Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/6.JPG</loc>
+        <loc>https://ryx-moto.md/galery/6.JPG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/6.JPG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/6.JPG</image:loc>
             <image:caption>RYX MOTO GARAGE - Întreținere Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/7.PNG</loc>
+        <loc>https://ryx-moto.md/galery/7.PNG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/7.PNG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/7.PNG</image:loc>
             <image:caption>RYX MOTO GARAGE - Piese Motociclete</image:caption>
         </image:image>
     </url>
 
     <url>
-        <loc>https://ryxmoto.md/galery/8.PNG</loc>
+        <loc>https://ryx-moto.md/galery/8.PNG</loc>
         <lastmod>2024-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <image:image>
-            <image:loc>https://ryxmoto.md/galery/8.PNG</image:loc>
+            <image:loc>https://ryx-moto.md/galery/8.PNG</image:loc>
             <image:caption>RYX MOTO GARAGE - Închirieri Motociclete</image:caption>
         </image:image>
     </url>

@@ -1,12 +1,12 @@
 # robots.txt for RYX MOTO GARAGE
-# https://ryxmoto.md/robots.txt
+# https://ryx-moto.md/robots.txt
 
 User-agent: *
 Allow: /
 Allow: /galery/
 
 # Sitemap location
-Sitemap: https://ryxmoto.md/sitemap.xml
+Sitemap: https://ryx-moto.md/sitemap.xml
 
 # Google Search Console
 User-agent: Googlebot
@@ -22,8 +22,6 @@ Allow: /
 # Block access to non-public files
 Disallow: /cgi-bin/
 Disallow: /*.json$
-Disallow: /*.js$
-Disallow: /*.css$
 
 # Crawl delay (be nice to servers)
 Crawl-delay: 0

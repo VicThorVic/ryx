@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Generează un timestamp readable: YYYY-MM-DD-HHMM (ex: 2024-11-23-2215)
+# Generează un timestamp readable: YYYY-MM-DD-HHMM (ex: 2025-11-23-2215)
 VERSION=$(date +%Y-%m-%d-%H:%M)
 
 # Actualizează versiunile în index.html (potrivește orice după v=)

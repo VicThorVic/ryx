@@ -47,19 +47,9 @@
     <link rel="icon" type="image/png" href="image.png">
     <link rel="apple-touch-icon" sizes="180x180" href="image.png">
 
-    <!-- CSS with cache busting - manually update version when you modify CSS -->
-    <link rel="stylesheet" href="style.css?v=20241123" id="mainCSS">
+    <!-- CSS with cache busting -->
+    <link rel="stylesheet" href="style.css?v=2025-11-23-22:31">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Auto-refresh CSS on page load for development -->
-    <script>
-        // Only refresh if not a bot/crawler
-        if (!/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) {
-            const cssLink = document.getElementById('mainCSS');
-            const timestamp = new Date().getTime();
-            cssLink.href = 'style.css?v=' + timestamp;
-        }
-    </script>
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -318,7 +308,7 @@
                     </div>
                     <div class="booking-detail-item">
                         <h4 data-i18n="modal.booking.hoursLabel">🕒 PROGRAM DE LUCRU</h4>
-                        <p data-i18n="modal.booking.hoursText">Luni - Vineri: 8:00 - 20:00<br>Sâmbătă - Duminică: 9:00 - 18:00</p>
+                        <p data-i18n="modal.booking.hoursText">Luni - Vineri: 8:00 - 18:00<br>Sâmbătă - Duminică: Zi liberă</p>
                     </div>
                 </div>
             </div>
@@ -345,19 +335,7 @@
         <div class="lightbox-counter" id="lightboxCounter"></div>
     </div>
 
-    <!-- JS with cache busting - manually update version when you modify JS -->
-    <script src="script.js?v=20241123" id="mainJS"></script>
-
-    <!-- Auto-refresh JS for cache busting -->
-    <script>
-        // Only refresh if not a bot/crawler
-        if (!/bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent)) {
-            const script = document.createElement('script');
-            script.src = 'script.js?v=' + new Date().getTime();
-            document.body.appendChild(script);
-            // Remove the old script
-            document.getElementById('mainJS').remove();
-        }
-    </script>
+    <!-- JS with cache busting -->
+    <script src="script.js?v=2025-11-23-22:31"></script>
 </body>
 </html>

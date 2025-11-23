@@ -47,7 +47,7 @@ const translations = {
             },
             hours: {
                 title: 'PROGRAM',
-                schedule: 'Lun-Vin: 8:00-20:00<br>Sâm-Dum: 9:00-18:00'
+                schedule: 'Lun-Vin: 8:00-20:00<br>Sâm-Dum: Zi liberă'
             },
             phone: {
                 title: 'TELEFON'
@@ -118,7 +118,7 @@ const translations = {
             },
             hours: {
                 title: 'HOURS',
-                schedule: 'Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM'
+                schedule: 'Mon-Fri: 8AM-8PM<br>Sat-Sun: Day off'
             },
             phone: {
                 title: 'PHONE'
@@ -135,7 +135,7 @@ const translations = {
                 email: 'EMAIL US',
                 locationLabel: '📍 LOCATION',
                 hoursLabel: '🕒 WORKING HOURS',
-                hoursText: 'Monday - Friday: 8AM - 8PM<br>Saturday - Sunday: 9AM - 6PM'
+                hoursText: 'Monday - Friday: 8AM - 8PM<br>Saturday - Sunday: Day off'
             },
             gallery: {
                 title: 'OUR GALLERY'
@@ -189,7 +189,7 @@ const translations = {
             },
             hours: {
                 title: 'ЧАСЫ РАБОТЫ',
-                schedule: 'Пн-Пт: 8:00-20:00<br>Сб-Вс: 9:00-18:00'
+                schedule: 'Пн-Пт: 8:00-20:00<br>Сб-Вс: Выходной день'
             },
             phone: {
                 title: 'ТЕЛЕФОН'

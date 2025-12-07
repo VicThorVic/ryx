@@ -431,14 +431,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Gallery images array (sorted by name)
     const galleryImages = [
-        'galery/1.JPG',
-        'galery/2.JPG',
-        'galery/3.JPG',
-        'galery/4.JPG',
-        'galery/5.JPG',
-        'galery/6.JPG',
-        'galery/7.JPG',
-        'galery/8.JPG'
+        'gallery/1.JPG',
+        'gallery/2.JPG',
+        'gallery/3.JPG',
+        'gallery/4.JPG',
+        'gallery/5.JPG',
+        'gallery/6.JPG',
+        'gallery/7.JPG',
+        'gallery/8.JPG'
     ];
 
     let currentImageIndex = 0;

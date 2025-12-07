@@ -3,25 +3,9 @@
 
 User-agent: *
 Allow: /
-Allow: /galery/
+Allow: /gallery/
+Disallow: /cgi-bin/
+Disallow: /*.json
 
 # Sitemap location
 Sitemap: https://ryx-moto.md/sitemap.xml
-
-# Google Search Console
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /galery/
-
-# Yandex (popular in Moldova/Russia)
-User-agent: Yandex
-Allow: /
-
-# Block access to non-public files
-Disallow: /cgi-bin/
-Disallow: /*.json$
-
-# Crawl delay (be nice to servers)
-Crawl-delay: 0
